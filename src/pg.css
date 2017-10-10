@@ -177,3 +177,28 @@ html, body {
 .pg-txt-lowercase {
     text-transform: lowercase;
 }
+
+
+/* BACKGROUND-IMAGE-STYLING */
+/* ======================== */
+
+.pg-bg-cover {
+    background-size: cover;
+}
+
+.pg-bg-contain {
+    background-size: contain;
+}
+
+.pg-bg-fixed {
+    background-attachment: fixed;
+}
+
+.pg-bg-center {
+    background-position: center;
+}
+
+.pg-bg-norepeat {
+    background-repeat: no-repeat;
+}
+
