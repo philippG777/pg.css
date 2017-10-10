@@ -153,3 +153,27 @@ html, body {
         display: none;
     }
 }
+
+
+/* TEXT-STYLING */
+/* ============ */
+
+.pg-txt-center {
+    text-align: center;
+}
+
+.pg-txt-no-decoration {
+    text-decoration: none;
+}
+
+.pg-txt-small-caps {
+    font-variant: small-caps;
+}
+
+.pg-txt-uppercase {
+    text-transform: uppercase;
+}
+
+.pg-txt-lowercase {
+    text-transform: lowercase;
+}
