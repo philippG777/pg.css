@@ -65,3 +65,23 @@ html, body {
 .pg-no-margin {
     margin: 0;
 }
+
+
+/* NAVIGATION */
+/* ========== */
+
+.pg-nav-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.pg-top-nav .nav-item {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
