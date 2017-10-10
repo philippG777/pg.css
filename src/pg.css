@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN WRAPPER ELEMENTS */
+/* ===================== */
+
+/* default pg-element */
+[class*="pg-"] {
+    position: relative;
+}
+
+.pg-container, .pg-header, .pg-footer {
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+    clear: both;
+    overflow: auto;
+}
+
+.pg-row, .pg-jumbotron {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    overflow: auto;
+}
+
+.pg-jumbotron {
+    height: 70vh;
+}
+
+.pg-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    clear: both;
+    overflow: auto;
+}
+
+.pg-centerbox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pg-left {
+    float: left !important;
+}
+
+.pg-right {
+    float: right !important;
+}
+
+.pg-no-padding {
+    padding: 0;
+}
+
+.pg-no-margin {
+    margin: 0;
+}
