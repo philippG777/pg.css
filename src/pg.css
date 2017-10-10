@@ -85,3 +85,71 @@ html, body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
+/* SIZING */
+/* ====== */
+
+/* cols */
+.w1 {width: 8.33%;}
+.w2 {width: 16.66%;}
+.w3, .quater {width: 25%;}
+.w4, .third {width: 33.33%;}
+.w5 {width: 41.66%;}
+.w6, .half {width: 50%;}
+.w7 {width: 58.33%;}
+.w8 .twothird {width: 66.66%;}
+.w9 .threequater {width: 75%;}
+.w10 {width: 83.33%;}
+.w11 {width: 91.66%;}
+.w12, .full {width: 100%;}
+
+/* default col */
+[class*="w"] {
+    float: left;
+}
+
+/* height relative to the screen-height */
+.h1 {height: 10vh;}
+.h2 {height: 20vh;}
+.h3 {height: 30vh;}
+.h4 {height: 40vh;}
+.h5 {height: 50vh;}
+.h6 {height: 60vh;}
+.h7 {height: 70vh;}
+.h8 {height: 80vh;}
+.h9 {height: 90vh;}
+.h10 {height: 100vh;}
+
+/* height relative to the parent-height */
+.rh1 {height: 10%;}
+.rh2 {height: 20%;}
+.rh3 {height: 30%;}
+.rh4 {height: 40%;}
+.rh5 {height: 50%;}
+.rh6 {height: 60%;}
+.rh7 {height: 70%;}
+.rh8 {height: 80%;}
+.rh9 {height: 90%;}
+.rh10 {height: 100%;}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* mobile */
+    .pg-only-desktop {
+        display: none;
+    }
+
+    /* on mobile every col has the full width */
+    [class*="w"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* desktop */
+    .pg-only-mobile {
+        display: none;
+    }
+}
