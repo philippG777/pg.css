@@ -16,7 +16,7 @@ html, body {
 
 .pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron {
     margin: 0;
-    padding: 10px;
+    padding: 0.5rem 1rem;
     clear: both;
     overflow: auto;
 }
@@ -264,7 +264,6 @@ html, body {
 .bdr-1-4 {border-width: 1.4rem;}
 .bdr-1-5 {border-width: 1.5rem;}
 
-
 .round-0 {border-radius: 0;}
 .round-0-5 {border-radius: 0.5rem;}
 .round-1 {border-radius: 1rem;}
@@ -295,11 +294,9 @@ html, body {
 .margin-3-0, .margin-3 {margin: 3rem;}
 
 
-
-
-
 /* PADDING-STYLING */
 /* =============== */
+
 .padding-0 {padding: 0;}
 .padding-0-1 {padding: 0.1rem;}
 .padding-0-2 {padding: 0.2rem;}
