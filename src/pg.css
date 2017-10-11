@@ -158,23 +158,23 @@ html, body {
 /* TEXT-STYLING */
 /* ============ */
 
-.pg-txt-center {
-    text-align: center;
-}
+.txt-left {text-align: left;}
+.txt-center {text-align: center;}
+.txt-right {text-align: right;}
 
-.pg-txt-no-decoration {
-    text-decoration: none;
-}
+.txt-no-decoration {text-decoration: none;}
+.txt-underline {text-decoration: underline;}
+.txt-overline {text-decoration: overline;}
 
-.pg-txt-small-caps {
+.txt-small-caps {
     font-variant: small-caps;
 }
 
-.pg-txt-uppercase {
+.txt-uppercase {
     text-transform: uppercase;
 }
 
-.pg-txt-lowercase {
+.txt-lowercase {
     text-transform: lowercase;
 }
 
