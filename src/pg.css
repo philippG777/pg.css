@@ -15,15 +15,18 @@ html, body {
     position: relative;
 }
 
-.pg-container, .pg-header, .pg-footer {
+.pg-container, .pg-header, .pg-footer, .pg-card, .pg-jumbotron {
     width: 100%;
     margin: 0;
-    padding: 5%;
+    padding: 1rem;
     clear: both;
     overflow: auto;
 }
 
-.pg-row, .pg-jumbotron {
+.pg-card {
+}
+
+.pg-row {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -50,11 +53,11 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
-.pg-left {
+.left {
     float: left !important;
 }
 
-.pg-right {
+.right {
     float: right !important;
 }
 
@@ -192,28 +195,26 @@ html, body {
 }
 
 
-
-
 /* BACKGROUND-IMAGE-STYLING */
 /* ======================== */
 
 .bg-cover {
-    background-size: cover;
+    background-size: cover !important;
 }
 
 .bg-contain {
-    background-size: contain;
+    background-size: contain !important;
 }
 
 .bg-fixed {
-    background-attachment: fixed;
+    background-attachment: fixed !important;
 }
 
 .bg-center {
-    background-position: center;
+    background-position: center !important;
 }
 
 .bg-norepeat {
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
 }
 
