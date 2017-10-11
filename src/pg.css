@@ -1,3 +1,20 @@
+/*
+TODO:
+    *dropdowns
+    *tooltips
+    *vertical menus
+        -> allways open
+        -> normaly closed
+        -> responsive
+        -> animation
+            -> overlay
+            -> push
+    *rotation
+*/
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -226,6 +243,18 @@ html, body {
 
 .bg-fixed {
     background-attachment: fixed !important;
+}
+
+/* less powerfull phones have problems with parallax-scrolling*/
+@media only screen and (max-width: 768px) {
+    /* mobile */
+    .bg-fixed {
+        background-attachment: scroll !important;
+    }
+
+    .bg-fixed.allways {
+        background-attachment: fixed !important;
+    }
 }
 
 .bg-center {
