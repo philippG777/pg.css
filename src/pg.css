@@ -15,19 +15,23 @@ html, body {
     position: relative;
 }
 
-.pg-container, .pg-header, .pg-footer, .pg-card, .pg-jumbotron {
-    width: 100%;
+.pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron {
     margin: 0;
-    padding: 1rem;
+    padding: 10px;
     clear: both;
     overflow: auto;
 }
 
 .pg-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pg-panel, .pg-card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .pg-row {
-    width: 100%;
     margin: 0;
     padding: 0;
     clear: both;
@@ -77,12 +81,12 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     clear: both;
 }
 
 .pg-menu.horizontal .item {
-    display: inline-block;
+    display: block;
     float: left;
     padding: 10px;
     padding-left: 15px;
@@ -91,8 +95,9 @@ html, body {
 
 @media only screen and (max-width: 768px) {
     /* mobile */
-    .pg-menu .item {
-        display: block;
+    .pg-menu.horizontal .item {
+        float: none !important;
+        text-align: center;
     }
 }
 
@@ -154,6 +159,7 @@ html, body {
     /* on mobile every col has the full width */
     [class*="w"] {
         width: 100%;
+        float: none !important;
     }
 }
 
@@ -241,4 +247,37 @@ html, body {
 .bg-norepeat {
     background-repeat: no-repeat !important;
 }
+
+
+/* BORDER-STYLING */
+/* ============== */
+
+[class*="bdr-"] {
+    border-style: solid;
+}
+.bdr-0 {border-width: 0;}
+.bdr-0-1 {border-width: 0.1rem;}
+.bdr-0-2 {border-width: 0.2rem;}
+.bdr-0-3 {border-width: 0.3rem;}
+.bdr-0-4 {border-width: 0.4rem;}
+.bdr-0-5 {border-width: 0.5rem;}
+.bdr-0-6 {border-width: 0.6rem;}
+.bdr-0-7 {border-width: 0.7rem;}
+.bdr-0-8 {border-width: 0.8rem;}
+.bdr-0-9 {border-width: 0.9rem;}
+.bdr-1, .bdr-1-0 {border-width: 1rem;}
+.bdr-1-1 {border-width: 1.1rem;}
+.bdr-1-2 {border-width: 1.2rem;}
+.bdr-1-3 {border-width: 1.3rem;}
+.bdr-1-4 {border-width: 1.4rem;}
+.bdr-1-5 {border-width: 1.5rem;}
+
+
+.round-0 {border-radius: 0;}
+.round-0-5 {border-radius: 0.5rem;}
+.round-1 {border-radius: 1rem;}
+.round-2 {border-radius: 2rem;}
+.round-3 {border-radius: 3rem;}
+.round-4 {border-radius: 4rem;}
+.round-5 {border-radius: 5rem;}
 
