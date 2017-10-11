@@ -245,9 +245,13 @@ html, body {
 }
 .bdr-0 {border-width: 0;}
 .bdr-0-1 {border-width: 0.1rem;}
+.bdr-0-15 {border-width: 0.15rem;}
 .bdr-0-2 {border-width: 0.2rem;}
+.bdr-0-25 {border-width: 0.25rem;}
 .bdr-0-3 {border-width: 0.3rem;}
+.bdr-0-35 {border-width: 0.35rem;}
 .bdr-0-4 {border-width: 0.4rem;}
+.bdr-0-45 {border-width: 0.45rem;}
 .bdr-0-5 {border-width: 0.5rem;}
 .bdr-0-6 {border-width: 0.6rem;}
 .bdr-0-7 {border-width: 0.7rem;}
