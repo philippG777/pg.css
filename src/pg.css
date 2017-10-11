@@ -166,9 +166,6 @@ html, body {
 .txt-underline {text-decoration: underline;}
 .txt-overline {text-decoration: overline;}
 
-.txt-small-caps {
-    font-variant: small-caps;
-}
 
 .txt-uppercase {
     text-transform: uppercase;
@@ -177,6 +174,24 @@ html, body {
 .txt-lowercase {
     text-transform: lowercase;
 }
+
+
+/* FONT-STYLING */
+/* ============ */
+
+.fnt-small-caps {
+    font-variant: small-caps;
+}
+
+.fnt-italic {
+    font-style: italic;
+}
+
+.fnt-bold {
+    font-weight: bold;
+}
+
+
 
 
 /* BACKGROUND-IMAGE-STYLING */
