@@ -182,23 +182,23 @@ html, body {
 /* BACKGROUND-IMAGE-STYLING */
 /* ======================== */
 
-.pg-bg-cover {
+.bg-cover {
     background-size: cover;
 }
 
-.pg-bg-contain {
+.bg-contain {
     background-size: contain;
 }
 
-.pg-bg-fixed {
+.bg-fixed {
     background-attachment: fixed;
 }
 
-.pg-bg-center {
+.bg-center {
     background-position: center;
 }
 
-.pg-bg-norepeat {
+.bg-norepeat {
     background-repeat: no-repeat;
 }
 
