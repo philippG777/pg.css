@@ -73,7 +73,7 @@ html, body {
 /* NAVIGATION */
 /* ========== */
 
-.pg-nav-bar {
+.pg-menu.horizontal {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -81,12 +81,19 @@ html, body {
     clear: both;
 }
 
-.pg-top-nav .nav-item {
+.pg-menu.horizontal .item {
     display: inline-block;
     float: left;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* mobile */
+    .pg-menu .item {
+        display: block;
+    }
 }
 
 
@@ -193,6 +200,23 @@ html, body {
 .fnt-bold {
     font-weight: bold;
 }
+
+/* font-sizing */
+.fnt-1 {font-size: 1rem;}
+.fnt-2 {font-size: 2rem;}
+.fnt-3 {font-size: 3rem;}
+.fnt-4 {font-size: 4rem;}
+.fnt-5 {font-size: 5rem;}
+.fnt-6 {font-size: 6rem;}
+.fnt-7 {font-size: 7rem;}
+.fnt-8 {font-size: 8rem;}
+.fnt-9 {font-size: 9rem;}
+.fnt-10 {font-size: 10rem;}
+.fnt-11 {font-size: 11rem;}
+.fnt-12 {font-size: 12rem;}
+.fnt-13 {font-size: 13rem;}
+.fnt-14 {font-size: 14rem;}
+.fnt-15 {font-size: 15rem;}
 
 
 /* BACKGROUND-IMAGE-STYLING */
