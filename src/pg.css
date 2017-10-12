@@ -74,6 +74,11 @@ html, body {
         display: none;
     }
 
+    /* BACKGROUND-STYLING */
+    .bg-fixed {
+        background-attachment: fixed !important;
+    }
+
     /* PG-DROPDOWN */
     .pg-dropdown .content .item[class*="margin-"] {
         margin-left: 0;
@@ -356,10 +361,6 @@ Positioning using flex-box
 
 .bg-contain {
     background-size: contain !important;
-}
-
-.bg-fixed {
-    background-attachment: fixed !important;
 }
 
 .bg-center {
