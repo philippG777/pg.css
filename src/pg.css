@@ -125,15 +125,15 @@ html, body {
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    width: 10rem;
+    width: 12rem;
     background-color: #202020;
     border-radius: 1rem;
     padding: 0.4rem;
     color: white;
 
     bottom: 100%;
-    left: -2.5rem;
-
+    left: 50%;
+    margin-left: -6rem;
     transition: 0.2s;
 }
 
