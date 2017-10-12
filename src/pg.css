@@ -246,6 +246,28 @@ html, body {
 }
 
 
+/* POSITIONING */
+/* =========== */
+
+/*
+Positioning using flex-box
+*/
+
+[class*="f-"], .flex {
+    display: flex;
+}
+
+.f-left {justify-content: flex-start;}
+.f-center {justify-content: center;}
+.f-right {justify-content: flex-end;}
+
+.f-top {align-items: flex-start;}
+.f-middle {align-items: center;}
+.f-bottom {align-items: flex-end;}
+
+
+
+
 /* TEXT-STYLING */
 /* ============ */
 
