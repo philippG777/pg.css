@@ -20,6 +20,68 @@ html, body {
     margin: 0;
 }
 
+
+/* MEDIA-QUERYS */
+/* ============ */
+
+/* Mobile */
+/* ------ */
+
+@media only screen and (max-width: 768px) {
+    .only-desktop {
+        display: none;
+    }
+
+    /* on mobile every col has the full width */
+    .w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 ,.w9, .w10, .w11, .w12, .quater, .third, .half, .twothird, .threequater, .full {
+        width: 100%;
+        float: none !important;
+    }
+
+
+    /* PG-MENU */
+    .pg-menu.horizontal .item {
+        float: none !important;
+        text-align: center;
+    }
+
+
+    /* PG-DROPDOWN */
+    .pg-dropdown .content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /* BACKGROUND-STYLING */
+    /* less powerfull phones have problems with parallax-scrolling*/
+    .bg-fixed {
+        background-attachment: scroll !important;
+    }
+
+    .bg-fixed.allways {
+        background-attachment: fixed !important;
+    }
+}
+
+/* Desktop */
+/* ------- */
+
+@media only screen and (min-width: 769px) {
+    .only-mobile {
+        display: none;
+    }
+
+    /* PG-DROPDOWN */
+    .pg-dropdown .content .item[class*="margin-"] {
+        margin-left: 0;
+    }
+}
+
+
+
 /* MAIN WRAPPER ELEMENTS */
 /* ===================== */
 
@@ -97,15 +159,6 @@ html, body {
     display: block;
 }
 
-@media only screen and (max-width: 768px) {
-    /* mobile */
-    .pg-menu.horizontal .item {
-        float: none !important;
-        text-align: center;
-    }
-}
-
-
 
 /* TOOLTIP */
 /* ======= */
@@ -167,25 +220,6 @@ html, body {
     opacity: 1;
 }
 
-@media only screen and (max-width: 768px)
-{
-    /* mobile */
-    .pg-dropdown .content {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        left: 0;
-        right: 0;
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    /* desktop */
-    .pg-dropdown .content .item[class*="margin-"] {
-        margin-left: 0;
-    }
-}
-
 
 /* SIZING */
 /* ====== */
@@ -232,28 +266,6 @@ html, body {
 .rh8 {height: 80%;}
 .rh9 {height: 90%;}
 .rh10 {height: 100%;}
-
-
-
-@media only screen and (max-width: 768px) {
-    /* mobile */
-    .only-desktop {
-        display: none;
-    }
-
-    /* on mobile every col has the full width */
-    .w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 ,.w9, .w10, .w11, .w12, .quater, .third, .half, .twothird, .threequater, .full {
-        width: 100%;
-        float: none !important;
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    /* desktop */
-    .only-mobile {
-        display: none;
-    }
-}
 
 
 /* POSITIONING */
@@ -345,18 +357,6 @@ Positioning using flex-box
 
 .bg-fixed {
     background-attachment: fixed !important;
-}
-
-/* less powerfull phones have problems with parallax-scrolling*/
-@media only screen and (max-width: 768px) {
-    /* mobile */
-    .bg-fixed {
-        background-attachment: scroll !important;
-    }
-
-    .bg-fixed.allways {
-        background-attachment: fixed !important;
-    }
 }
 
 .bg-center {
