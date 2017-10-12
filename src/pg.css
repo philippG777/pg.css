@@ -1,7 +1,6 @@
 /*
 TODO:
     *dropdowns
-    *tooltips
     *vertical menus
         -> allways open
         -> normaly closed
@@ -27,15 +26,15 @@ html, body {
 /* ===================== */
 
 /* default pg-element */
-[class*="pg-"] {
+/*[class*="pg-"] {
     position: relative;
-}
+}*/
 
 .pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron {
     margin: 0;
     padding: 0.5rem 1rem;
     clear: both;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .pg-card {
@@ -100,6 +99,9 @@ html, body {
     float: left;
 }
 
+.pg-menu.horizontal .item .item {
+    float: none;
+}
 
 /* Vertical menu */
 /* ------------- */
@@ -120,6 +122,10 @@ html, body {
 
 /* TOOLTIP */
 /* ======= */
+
+.pg-tooltip {
+    position: relative;
+}
 
 .pg-tooltip .content {
     position: absolute;
@@ -143,6 +149,30 @@ html, body {
 }
 
 
+/* DROPDOWNS */
+/* ========= */
+
+.pg-dropdown .content {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    min-width: 5rem;
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+    background-color: white;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.pg-dropdown .content .item {
+    display: block;
+    padding: 0.5rem;
+}
+
+.pg-dropdown:hover .content {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /* SIZING */
