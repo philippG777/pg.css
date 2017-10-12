@@ -195,7 +195,7 @@ html, body {
 .w12, .full {width: 100%;}
 
 /* default col */
-[class*="w"] {
+[class*="w"], .quater, .third, .half, .twothird, .threequater, .full {
     float: left;
 }
 
