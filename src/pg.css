@@ -1,6 +1,5 @@
 /*
 TODO:
-    *dropdowns
     *vertical menus
         -> allways open
         -> normaly closed
@@ -10,9 +9,6 @@ TODO:
             -> push
     *rotation
 */
-
-
-
 
 * {
     box-sizing: border-box;
@@ -174,6 +170,25 @@ html, body {
 .pg-dropdown:hover .content {
     visibility: visible;
     opacity: 1;
+}
+
+@media only screen and (max-width: 768px)
+{
+    /* mobile */
+    .pg-dropdown .content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* desktop */
+    .pg-dropdown .content .item[class*="margin-"] {
+        margin-left: 0;
+    }
 }
 
 
@@ -413,10 +428,6 @@ Positioning using flex-box
 .margin-2-0, .margin-2 {margin: 2rem;}
 .margin-2-5 {margin: 2.5rem;}
 .margin-3-0, .margin-3 {margin: 3rem;}
-
-.pg-dropdown .content .item[class*="margin-"] {
-    margin-left: 0;
-}
 
 
 /* PADDING-STYLING */
