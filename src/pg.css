@@ -90,19 +90,19 @@ html, body {
     clear: both;
 }
 
-.pg-menu.horizontal > .item {
+.pg-menu.horizontal .item {
     display: block;
     float: left;
 }
 
-.pg-menu.horizontal > .item > .item {
+.pg-menu.horizontal .item .item {
     float: none;
 }
 
 /* Vertical menu */
 /* ------------- */
 
-.pg-menu.vertical > .item {
+.pg-menu.vertical .item {
     display: block;
 }
 
@@ -148,6 +148,10 @@ html, body {
 /* DROPDOWNS */
 /* ========= */
 
+.pg-dropdown {
+    cursor: pointer;
+}
+
 .pg-dropdown .content {
     position: absolute;
     display: block;
@@ -158,11 +162,13 @@ html, body {
     background-color: white;
     opacity: 0;
     transition: 0.2s;
+    cursor: initial;
 }
 
 .pg-dropdown .content .item {
     display: block;
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 .pg-dropdown:hover .content {
