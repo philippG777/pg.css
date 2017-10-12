@@ -25,11 +25,6 @@ html, body {
 /* MAIN WRAPPER ELEMENTS */
 /* ===================== */
 
-/* default pg-element */
-/*[class*="pg-"] {
-    position: relative;
-}*/
-
 .pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron {
     margin: 0;
     padding: 0.5rem 1rem;
@@ -87,6 +82,7 @@ html, body {
 /* Horizontal menu*/
 /* --------------- */
 .pg-menu.horizontal {
+
     width: 100%;
     margin: 0;
     padding: 0;
@@ -94,19 +90,19 @@ html, body {
     clear: both;
 }
 
-.pg-menu.horizontal .item {
+.pg-menu.horizontal > .item {
     display: block;
     float: left;
 }
 
-.pg-menu.horizontal .item .item {
+.pg-menu.horizontal > .item > .item {
     float: none;
 }
 
 /* Vertical menu */
 /* ------------- */
 
-.pg-menu.vertical .item {
+.pg-menu.vertical > .item {
     display: block;
 }
 
@@ -413,3 +409,11 @@ html, body {
 .padding-2-0, .padding-2 {padding: 2rem;}
 .padding-2-5 {padding: 2.5rem;}
 .padding-3-0, .padding-3 {padding: 3rem;}
+
+
+/* EXTRAS */
+/* ====== */
+
+.relative {
+    position: relative;
+}
