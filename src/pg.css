@@ -56,13 +56,6 @@ html, body {
     overflow: auto;
 }
 
-.pg-centerbox {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .left {
     float: left !important;
 }
