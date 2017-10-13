@@ -82,6 +82,8 @@ html, body {
     /* PG-DROPDOWN */
     .pg-dropdown .content .item[class*="margin-"] {
         margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .pg-dropdown .content {
@@ -155,6 +157,7 @@ html, body {
 .pg-menu.horizontal .item {
     display: block;
     float: left;
+    padding: 0.5rem;
 }
 
 .pg-menu.horizontal .item .item {
