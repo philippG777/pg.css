@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
 TODO:
     *vertical menus
@@ -9,8 +11,6 @@ TODO:
             -> push
     *rotation
 */
-
-@charset "utf-8";
 
 * {
     box-sizing: border-box;
