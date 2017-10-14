@@ -27,7 +27,7 @@ html, body {
 /* Mobile */
 /* ------ */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 50rem) {
     .only-desktop {
         display: none;
     }
@@ -69,7 +69,7 @@ html, body {
 /* Desktop */
 /* ------- */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 50rem) {
     .only-mobile {
         display: none;
     }
@@ -439,6 +439,16 @@ Positioning using flex-box
 .margin-2-5 {margin: 2.5rem;}
 .margin-3-0, .margin-3 {margin: 3rem;}
 
+.margin-v-0-1 {margin: 1vw;}
+.margin-v-0-2 {margin: 2vw;}
+.margin-v-0-3 {margin: 3vw;}
+.margin-v-0-4 {margin: 4vw;}
+.margin-v-0-5 {margin: 5vw;}
+.margin-v-1 {margin: 10vw;}
+.margin-v-1-5 {margin: 15vw;}
+.margin-v-2 {margin: 20vw;}
+.margin-v-2-5 {margin: 25vw;}
+
 
 /* PADDING-STYLING */
 /* =============== */
@@ -458,3 +468,9 @@ Positioning using flex-box
 .padding-2-0, .padding-2 {padding: 2rem;}
 .padding-2-5 {padding: 2.5rem;}
 .padding-3-0, .padding-3 {padding: 3rem;}
+
+.padding-v-0-5 {padding: 5vw;}
+.padding-v-1 {padding: 10vw;}
+.padding-v-1-5 {padding: 15vw;}
+.padding-v-2 {padding: 20vw;}
+.padding-v-2-5 {padding: 25vw;}
