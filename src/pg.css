@@ -403,7 +403,7 @@ Positioning using flex-box
 .bdr-0-7 {border-width: 0.7rem;}
 .bdr-0-8 {border-width: 0.8rem;}
 .bdr-0-9 {border-width: 0.9rem;}
-.bdr-1, .bdr-1-0 {border-width: 1rem;}
+.bdr-1 {border-width: 1rem;}
 .bdr-1-1 {border-width: 1.1rem;}
 .bdr-1-2 {border-width: 1.2rem;}
 .bdr-1-3 {border-width: 1.3rem;}
@@ -433,11 +433,11 @@ Positioning using flex-box
 .margin-0-8 {margin: 0.8rem;}
 .margin-0-9 {margin: 0.9rem;}
 
-.margin-1-0, .margin-1 {margin: 1rem;}
+.margin-1 {margin: 1rem;}
 .margin-1-5 {margin: 1.5rem;}
-.margin-2-0, .margin-2 {margin: 2rem;}
+.margin-2 {margin: 2rem;}
 .margin-2-5 {margin: 2.5rem;}
-.margin-3-0, .margin-3 {margin: 3rem;}
+.margin-3 {margin: 3rem;}
 
 .margin-v-0-1 {margin: 1vw;}
 .margin-v-0-2 {margin: 2vw;}
@@ -463,11 +463,11 @@ Positioning using flex-box
 .padding-0-7 {padding: 0.7rem;}
 .padding-0-8 {padding: 0.8rem;}
 .padding-0-9 {padding: 0.9rem;}
-.padding-1-0, .padding-1 {padding: 1rem;}
+.padding-1 {padding: 1rem;}
 .padding-1-5 {padding: 1.5rem;}
-.padding-2-0, .padding-2 {padding: 2rem;}
+.padding-2 {padding: 2rem;}
 .padding-2-5 {padding: 2.5rem;}
-.padding-3-0, .padding-3 {padding: 3rem;}
+.padding-3 {padding: 3rem;}
 
 .padding-v-0-5 {padding: 5vw;}
 .padding-v-1 {padding: 10vw;}
