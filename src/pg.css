@@ -433,7 +433,7 @@ Positioning using flex-box
 .margin-0-8 {margin: 0.8rem;}
 .margin-0-9 {margin: 0.9rem;}
 
-.margin-1 {margin: 1rem;}
+.margin-1, .margin {margin: 1rem;}
 .margin-1-5 {margin: 1.5rem;}
 .margin-2 {margin: 2rem;}
 .margin-2-5 {margin: 2.5rem;}
@@ -448,6 +448,10 @@ Positioning using flex-box
 .margin-v-1-5 {margin: 15vw;}
 .margin-v-2 {margin: 20vw;}
 .margin-v-2-5 {margin: 25vw;}
+
+.margin-auto {
+    margin: 1rem auto;
+}
 
 
 /* PADDING-STYLING */
