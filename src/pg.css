@@ -33,11 +33,13 @@ html, body {
     }
 
     /* on mobile every col has the full width */
-    .w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 ,.w9, .w10, .w11, .w12, .quater, .third, .half, .twothird, .threequater, .full {
-        width: 100%;
-        float: none !important;
+    .pg-row {
+        flex-direction: column !important;
     }
 
+    .col {
+        width: 100% !important;
+    }
 
     /* PG-MENU */
     .pg-menu.horizontal .item {
@@ -97,12 +99,7 @@ html, body {
 /* ===================== */
 
 .pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron {
-    margin: 0;
     padding: 0.5rem 1rem;
-    clear: both;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
 }
 
 .pg-card {
@@ -114,14 +111,25 @@ html, body {
     margin-bottom: 1rem;
 }
 
-.pg-row {
+.pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron .pg-row {
     margin: 0;
-    padding: 0;
     clear: both;
-    overflow: auto;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+}
+
+
+.pg-row {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.col {
+    flex: 1 auto;
 }
 
 .pg-jumbotron {
@@ -243,7 +251,6 @@ html, body {
 /* SIZING */
 /* ====== */
 
-/* cols */
 .w1 {width: 8.33%;}
 .w2 {width: 16.66%;}
 .w3, .quater {width: 25%;}
@@ -257,10 +264,6 @@ html, body {
 .w11 {width: 91.66%;}
 .w12, .full {width: 100%;}
 
-/* default col */
-.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8, .w9, .w10, .w11, .w12, .quater, .third, .half, .twothird, .threequater, .full {
-    float: left;
-}
 
 /* height relative to the screen-height */
 .h1 {height: 10vh;}
@@ -305,8 +308,6 @@ Positioning using flex-box
 .f-top {align-items: flex-start;}
 .f-middle {align-items: center;}
 .f-bottom {align-items: flex-end;}
-
-
 
 
 /* TEXT-STYLING */
