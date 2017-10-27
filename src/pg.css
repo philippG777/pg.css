@@ -346,21 +346,13 @@ Positioning using flex-box
 }
 
 /* font-sizing */
-.fnt-1 {font-size: 1rem;}
-.fnt-2 {font-size: 2rem;}
-.fnt-3 {font-size: 3rem;}
-.fnt-4 {font-size: 4rem;}
-.fnt-5 {font-size: 5rem;}
-.fnt-6 {font-size: 6rem;}
-.fnt-7 {font-size: 7rem;}
-.fnt-8 {font-size: 8rem;}
-.fnt-9 {font-size: 9rem;}
-.fnt-10 {font-size: 10rem;}
-.fnt-11 {font-size: 11rem;}
-.fnt-12 {font-size: 12rem;}
-.fnt-13 {font-size: 13rem;}
-.fnt-14 {font-size: 14rem;}
-.fnt-15 {font-size: 15rem;}
+.fnt-small {font-size: 0.75rem}
+.fnt-medium {font-size: 1rem;}
+.fnt-large {font-size: 1.25rem}
+.fnt-x-large {font-size: 1.5rem;}
+.fnt-xx-large {font-size: 2rem;}
+.fnt-xxx-large {font-size: 3rem;}
+.fnt-jumbo {font-size: 4rem;}
 
 
 /* BACKGROUND-IMAGE-STYLING */
