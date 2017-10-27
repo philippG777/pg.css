@@ -336,9 +336,10 @@ Positioning using flex-box
 }
 
 /* font-sizing */
-.fnt-s {font-size: 0.75rem}
+.fnt-xs {font-size: 0.5rem;}
+.fnt-s {font-size: 0.75rem;}
 .fnt-m {font-size: 1rem;}
-.fnt-l {font-size: 1.25rem}
+.fnt-l {font-size: 1.25rem;}
 .fnt-xl {font-size: 1.5rem;}
 .fnt-xxl {font-size: 2rem;}
 .fnt-xxxl {font-size: 3rem;}
