@@ -393,13 +393,14 @@ Positioning using flex-box
 .bdr-1-4 {border-width: 1.4rem;}
 .bdr-1-5 {border-width: 1.5rem;}
 
-.round-0 {border-radius: 0;}
-.round-0-5 {border-radius: 0.5rem;}
-.round-1 {border-radius: 1rem;}
-.round-2 {border-radius: 2rem;}
-.round-3 {border-radius: 3rem;}
-.round-4 {border-radius: 4rem;}
-.round-5 {border-radius: 5rem;}
+.not-round {border-radius: 0;}
+.round-xs {border-radius: 0.5rem;}
+.round-s {border-radius: 0.75rem;}
+.round-m {border-radius: 1rem;}
+.round-l {border-radius: 2rem;}
+.round-xl {border-radius: 3rem;}
+.round-xxl {border-radius: 4rem;}
+.round-xxxl {border-radius: 5rem;}
 
 
 /* MARGIN-STYLING */
