@@ -104,6 +104,7 @@ html, body {
 
 .pg-card {
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.5rem 1.2rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
 }
 
 .pg-panel, .pg-card {
@@ -394,13 +395,13 @@ Positioning using flex-box
 .bdr-1-5 {border-width: 1.5rem;}
 
 .not-round {border-radius: 0;}
-.round-xs {border-radius: 0.5rem;}
-.round-s {border-radius: 0.75rem;}
-.round-m {border-radius: 1rem;}
-.round-l {border-radius: 2rem;}
-.round-xl {border-radius: 3rem;}
-.round-xxl {border-radius: 4rem;}
-.round-xxxl {border-radius: 5rem;}
+.round-xs {border-radius: 0.125rem;}
+.round-s {border-radius: 0.25rem;}
+.round-m {border-radius: 0.5rem;}
+.round-l {border-radius: 1rem;}
+.round-xl {border-radius: 2rem;}
+.round-xxl {border-radius: 3rem;}
+.round-xxxl {border-radius: 4rem;}
 
 
 /* MARGIN-STYLING */
