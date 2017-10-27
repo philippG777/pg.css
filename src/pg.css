@@ -119,7 +119,6 @@ html, body {
     hyphens: auto;
 }
 
-
 .pg-row {
     padding: 0;
     display: flex;
@@ -337,12 +336,12 @@ Positioning using flex-box
 }
 
 /* font-sizing */
-.fnt-small {font-size: 0.75rem}
-.fnt-medium {font-size: 1rem;}
-.fnt-large {font-size: 1.25rem}
-.fnt-x-large {font-size: 1.5rem;}
-.fnt-xx-large {font-size: 2rem;}
-.fnt-xxx-large {font-size: 3rem;}
+.fnt-s {font-size: 0.75rem}
+.fnt-m {font-size: 1rem;}
+.fnt-l {font-size: 1.25rem}
+.fnt-xl {font-size: 1.5rem;}
+.fnt-xxl {font-size: 2rem;}
+.fnt-xxxl {font-size: 3rem;}
 .fnt-jumbo {font-size: 4rem;}
 
 
