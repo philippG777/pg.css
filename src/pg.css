@@ -241,18 +241,18 @@ html, body {
 /* SIZING */
 /* ====== */
 
-.w1 {width: 8.33%;}
-.w2 {width: 16.66%;}
-.w3, .quater {width: 25%;}
-.w4, .third {width: 33.33%;}
-.w5 {width: 41.66%;}
-.w6, .half {width: 50%;}
-.w7 {width: 58.33%;}
-.w8 .twothird {width: 66.66%;}
-.w9 .threequater {width: 75%;}
-.w10 {width: 83.33%;}
-.w11 {width: 91.66%;}
-.w12, .full {width: 100%;}
+.w1 {width: 8.33%; flex: none;}
+.w2 {width: 16.66%; flex: none;}
+.w3, .quater {width: 25%; flex: none;}
+.w4, .third {width: 33.33%; flex: none;}
+.w5 {width: 41.66%; flex: none;}
+.w6, .half {width: 50%; flex: none;}
+.w7 {width: 58.33%; flex: none;}
+.w8 .twothird {width: 66.66%; flex: none;}
+.w9 .threequater {width: 75%; flex: none;}
+.w10 {width: 83.33%; flex: none;}
+.w11 {width: 91.66%; flex: none;}
+.w12, .full {width: 100%; flex: none;}
 
 
 /* height relative to the screen-height */
@@ -287,17 +287,13 @@ html, body {
 Positioning using flex-box
 */
 
-[class*="f-"], .flex {
-    display: flex;
-}
+.f-left {display: flex; justify-content: flex-start;}
+.f-center {display: flex; justify-content: center;}
+.f-right {display: flex; justify-content: flex-end;}
 
-.f-left {justify-content: flex-start;}
-.f-center {justify-content: center;}
-.f-right {justify-content: flex-end;}
-
-.f-top {align-items: flex-start;}
-.f-middle {align-items: center;}
-.f-bottom {align-items: flex-end;}
+.f-top {display: flex; align-items: flex-start;}
+.f-middle {display: flex; align-items: center;}
+.f-bottom {display: flex; align-items: flex-end;}
 
 
 /* TEXT-STYLING */
