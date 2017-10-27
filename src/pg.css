@@ -111,7 +111,7 @@ html, body {
     margin-bottom: 1rem;
 }
 
-.pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron .pg-row {
+.pg-container, .pg-header, .pg-footer, .pg-card, .pg-panel, .pg-jumbotron .pg-row, .pg-fullscreen {
     margin: 0;
     clear: both;
     overflow-wrap: break-word;
@@ -139,21 +139,12 @@ html, body {
 .pg-fullscreen {
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    clear: both;
-    overflow: auto;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
 }
 
-.left {
-    float: left !important;
-}
 
-.right {
-    float: right !important;
-}
+/* float */
+.left {float: left !important;}
+.right {float: right !important;}
 
 
 /* NAVIGATION */
@@ -162,7 +153,6 @@ html, body {
 /* Horizontal menu*/
 /* --------------- */
 .pg-menu.horizontal {
-
     width: 100%;
     margin: 0;
     padding: 0;
