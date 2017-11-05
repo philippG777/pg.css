@@ -129,7 +129,7 @@ html, body {
 }
 
 .col {
-    flex: 1 auto;
+    flex: 1/* auto*/;
 }
 
 .pg-jumbotron {
