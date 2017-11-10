@@ -29,7 +29,7 @@ All elements have the `box-sizing: border-box;` set.
 
 #### .left and .right
 
-#### .flex and .f*
+#### .f*
 
 
 
@@ -79,8 +79,10 @@ All elements have the `box-sizing: border-box;` set.
 ### Sizing
 
 #### .w1 - .w12
+The width is seperated in twelve columns.
 
 #### .h1 - .h10
+
 
 #### .rh1 - .rh10
 
@@ -90,7 +92,7 @@ All elements have the `box-sizing: border-box;` set.
 
 ### Grids
 
-#### .pg-row
+#### .pg-cols
 
 #### .col
 
@@ -100,7 +102,7 @@ All elements have the `box-sizing: border-box;` set.
 
 ### Essentials
 
-#### .pg-menu.vertical
+#### .pg-menu.horizontal
 
 #### .pg-tooltip
 
