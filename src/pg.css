@@ -113,6 +113,9 @@ html, body {
     padding: 0;
 }
 
+/*
+Flex-columns
+*/
 .f-cols {
     display: flex;
     flex-direction: row;
@@ -227,6 +230,29 @@ html, body {
     visibility: visible;
     opacity: 1;
 }
+
+
+/* MODALS */
+/* ====== */
+.pg-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.8s;
+}
+
+.pg-modal > .content {
+    min-width: 20%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
 
 
 /* SIZING */
