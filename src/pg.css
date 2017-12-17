@@ -116,7 +116,7 @@ html, body {
 /*
 Flex-columns
 */
-.f-cols {
+.pg-cols {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -242,11 +242,9 @@ Flex-columns
     display: flex;
     align-items: center;
     justify-content: center;
-
-    transition: 0.8s;
 }
 
-.pg-modal > .content {
+.pg-modal .content:first-child {
     min-width: 20%;
     padding: 1rem;
     background-color: white;
