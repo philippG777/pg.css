@@ -22,6 +22,7 @@ All elements have the `box-sizing: border-box;` set.
 
 #### .pg-fullscreen
 
+#### .pg-modal
 
 
 
@@ -135,4 +136,6 @@ The width is seperated in twelve columns.
 
 #### .bg-norepeat
 
-#### .bg-fixed and .bg-fixed.allways
+#### .bg-fixed and .bg-fixed.always
+
+The `.bg-fixed` fixes the background on desktop devices. For fixing the background always add the `.always` class to the element.
