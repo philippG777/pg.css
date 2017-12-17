@@ -51,7 +51,7 @@ html, body {
         background-attachment: scroll !important;
     }
 
-    .bg-fixed.allways {
+    .bg-fixed.always {
         background-attachment: fixed !important;
     }
 }
