@@ -1,0 +1,36 @@
+$small-screen: "only screen and (max-width: 50rem)"
+
+$overlay-color: rgba(0, 0, 0, 0.5)
+$min-width: 20vw
+$s-min-width: 50vw
+$max-width: 90vw
+$padding: 1rem
+$bg-color: white
+$radius: 0.5rem
+
+.popup
+  position: fixed
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+
+  visibility: hidden
+  &.active
+    visibility: visible
+
+  background-color: $overlay-color
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .content:first-child
+    min-width: $min-width
+    max-width: $max-width
+    padding: $padding
+    background-color: $bg-color
+    border-radius: $radius
+
+    @media #{$small-screen}
+      min-width: $s-min-width
