@@ -1,0 +1,32 @@
+$width: 12rem
+$half-width: 6rem
+$bg-color: #202020
+$radius: 1rem
+$padding: 0.4rem
+$speed: 0.2s
+$font-color: white
+
+.tooltip
+  position: relative
+
+  .content
+    position: absolute
+    visibitlity: hidden
+    opacity: 0
+    width: $width
+    padding: $padding
+
+    border-radius: $radius
+    background-color: $bg-color
+    color: $font-color
+    text-align: center
+
+    bottom: 100%
+    left: 50%
+    margin-left: -$half-width
+    transistion: $speed
+
+  &:hover
+    .content
+      visibitlity: visible
+      opacity: 1

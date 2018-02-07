@@ -1,0 +1,30 @@
+$small-screen: "only screen and (max-width: 50rem)"
+$item-padding: 0.5rem
+
+.menu
+  margin: 0
+  padding: 0
+  text-align: center
+  .item
+    padding: $item-padding
+
+  &.horizontal
+    max-width: 100%
+    overflow: auto
+    clear: both
+
+    .item
+      display: block
+      float: left
+      
+      &.right
+        float: right
+      .item
+        float: none // clean this soon
+
+      @media #{$small-screen}
+        float: none !important
+
+  &.vertical
+    .item
+      display: block

@@ -1,0 +1,13 @@
+$small-screen: "only screen and (max-width: 50rem)"
+
+.cols
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: center
+  @media #{$small-screen}
+    flex-direction: column
+    align-items: stretch
+
+.col
+  flex: 1

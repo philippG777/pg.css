@@ -1,0 +1,32 @@
+$small-screen: "only screen and (max-width: 50rem)"
+$min-width: 5rem
+$space: 0.5rem
+$bg-color: white
+$speed: 0.2s
+$item-padding: 0.5rem
+
+.dropdown
+  cursor: pointer
+  .content
+    position: absolute
+    display: block
+    cursor: initial
+    padding-top: $space
+    margin: 0
+    width: 100%
+    min-width: $min-width
+    background-color: $bg-color
+
+    opacity: 0
+    visibility: hidden
+    
+    transition: $speed
+    .item
+      display: block
+      cursor: pointer
+      padding: $item-padding
+
+  &:hover
+    .content
+      visibility: visible
+      opacity: 1
