@@ -8,10 +8,11 @@ $font-color: white
 
 .tooltip
   position: relative
+  text-align: center
 
   .content
     position: absolute
-    visibitlity: hidden
+    visibility: hidden
     opacity: 0
     width: $width
     padding: $padding
@@ -19,14 +20,13 @@ $font-color: white
     border-radius: $radius
     background-color: $bg-color
     color: $font-color
-    text-align: center
 
     bottom: 100%
     left: 50%
     margin-left: -$half-width
-    transistion: $speed
+    transition: $speed
 
   &:hover
     .content
-      visibitlity: visible
+      visibility: visible
       opacity: 1

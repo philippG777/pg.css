@@ -129,23 +129,23 @@ html, body {
         min-width: 50vw; } }
 
 .tooltip {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .tooltip .content {
     position: absolute;
-    visibitlity: hidden;
+    visibility: hidden;
     opacity: 0;
     width: 12rem;
     padding: 0.4rem;
     border-radius: 1rem;
     background-color: #202020;
     color: white;
-    text-align: center;
     bottom: 100%;
     left: 50%;
     margin-left: -6rem;
-    transistion: 0.2s; }
+    transition: 0.2s; }
   .tooltip:hover .content {
-    visibitlity: visible;
+    visibility: visible;
     opacity: 1; }
 
 .wrapper {
