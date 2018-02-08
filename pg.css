@@ -40,7 +40,6 @@ html, body {
     cursor: initial;
     padding-top: 0.5rem;
     margin: 0;
-    width: 100%;
     min-width: 5rem;
     background-color: white;
     opacity: 0;
@@ -49,7 +48,8 @@ html, body {
     .dropdown .content .item {
       display: block;
       cursor: pointer;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      width: 100%; }
   .dropdown:hover .content {
     visibility: visible;
     opacity: 1; }
@@ -130,7 +130,8 @@ html, body {
 
 .tooltip {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .tooltip .content {
     position: absolute;
     visibility: hidden;
@@ -155,5 +156,35 @@ html, body {
 .fullscreen {
   height: 100vh;
   margin: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.margin-xxs {
+  margin: 0.25rem; }
+
+.margin-xs {
+  margin: 0.5rem; }
+
+.margin-s {
+  margin: 0.75rem; }
+
+.margin {
+  margin: 1rem; }
+
+.margin-l {
+  margin: 1.5rem; }
+
+.margin-xl {
+  margin: 2rem; }
+
+.margin-xxl {
+  margin: 2.5rem; }
+
+.margin-xxxl {
+  margin: 3rem; }
+
+.margin-auto {
+  margin: 1rem auto; }
 
 /*# sourceMappingURL=pg.css.map */
