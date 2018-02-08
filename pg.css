@@ -2,14 +2,6 @@
 * {
   font-family: "Trebuchet MS", Helvetica, sans-serif; }
 
-.menu {
-  background-color: #ff6600; }
-  .menu .items {
-    border: 1px solid black; }
-
-.container, .panel, .card, .jumbotron, .wrapper {
-  background-color: #ffffcc; }
-
 * {
   box-sizing: border-box; }
 
@@ -21,7 +13,8 @@ html, body {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.35);
   border-radius: 0.5rem; }
 
@@ -85,15 +78,13 @@ html, body {
     max-width: 100%;
     overflow: auto;
     clear: both; }
-    .menu.horizontal .item {
+    .menu.horizontal > .item {
       display: block;
       float: left; }
-      .menu.horizontal .item.right {
+      .menu.horizontal > .item.right {
         float: right; }
-      .menu.horizontal .item .item {
-        float: none; }
       @media only screen and (max-width: 50rem) {
-        .menu.horizontal .item {
+        .menu.horizontal > .item {
           float: none !important; } }
   .menu.vertical .item {
     display: block; }
@@ -103,7 +94,8 @@ html, body {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin: 1rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .popup {
   position: fixed;

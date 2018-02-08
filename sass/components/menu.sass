@@ -13,14 +13,12 @@ $item-padding: 0.5rem
     overflow: auto
     clear: both
 
-    .item
+    >.item
       display: block
       float: left
-      
+
       &.right
         float: right
-      .item
-        float: none // clean this soon
 
       @media #{$small-screen}
         float: none !important
@@ -28,3 +26,4 @@ $item-padding: 0.5rem
   &.vertical
     .item
       display: block
+    
