@@ -8,6 +8,11 @@
 html, body {
   margin: 0; }
 
+.button {
+  padding: 0.5rem;
+  border: 2px solid #202020;
+  border-radius: 0.75rem; }
+
 .card {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
