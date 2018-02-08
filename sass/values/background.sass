@@ -1,0 +1,17 @@
+$small-screen: "only screen and (max-width: 50rem)"
+
+.bg-cover
+  background-size: cover !important
+
+.bg-center
+  background-position: center !important
+
+
+.bg-norepeat
+  background-repeat: no-repeat !important
+
+.bg-fixed
+  background-attachment: fixed !important
+  &.mobile
+    @media #{$small-screen}
+      background-attachment: scroll !important

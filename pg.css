@@ -11,7 +11,7 @@
   background-color: #ffffcc; }
 
 * {
-  box-sizig: border-box; }
+  box-sizing: border-box; }
 
 html, body {
   margin: 0; }
@@ -22,7 +22,7 @@ html, body {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0;
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.5rem 1.2rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.35);
   border-radius: 0.5rem; }
 
 .container {
@@ -153,6 +153,77 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.bg-cover {
+  background-size: cover !important; }
+
+.bg-center {
+  background-position: center !important; }
+
+.bg-norepeat {
+  background-repeat: no-repeat !important; }
+
+.bg-fixed {
+  background-attachment: fixed !important; }
+  @media only screen and (max-width: 50rem) {
+    .bg-fixed.mobile {
+      background-attachment: scroll !important; } }
+
+.no-border {
+  border-width: 0; }
+
+.border {
+  border-width: 1px;
+  border-style: solid; }
+
+.border-l {
+  border-width: 2px;
+  border-style: solid; }
+
+.border-xl {
+  border-width: 3px;
+  border-style: solid; }
+
+.border-xxl {
+  border-width: 0.5rem;
+  border-style: solid; }
+
+.border-xxxl {
+  border-width: 1rem;
+  border-style: solid; }
+
+.font-xs {
+  font-size: 0.5rem; }
+
+.font-s {
+  font-size: 0.75rem; }
+
+.font-m {
+  font-size: 1rem; }
+
+.font-l {
+  font-size: 1.25rem; }
+
+.font-xl {
+  font-size: 1.5rem; }
+
+.font-xxl {
+  font-size: 2rem; }
+
+.font-xxxl {
+  font-size: 3rem; }
+
+.font-jumbo {
+  font-size: 4rem; }
+
+.font-small-caps {
+  font-variant: small-caps; }
+
+.font-italic {
+  font-style: italic; }
+
+.font-bold {
+  font-weight: bold; }
+
 .fullscreen {
   height: 100vh;
   margin: 0; }
@@ -186,5 +257,190 @@ html, body {
 
 .margin-auto {
   margin: 1rem auto; }
+
+@media only screen and (min-width: 50rem) {
+  .only-small-screen {
+    display: none; } }
+
+@media only screen and (max-width: 50rem) {
+  .only-large-screen {
+    display: none; } }
+
+.no-padding {
+  padding: 0; }
+
+.padding-xxs {
+  padding: 0.25rem; }
+
+.padding-xs {
+  padding: 0.5rem; }
+
+.padding-s {
+  padding: 0.75rem; }
+
+.padding {
+  padding: 1rem; }
+
+.padding-l {
+  padding: 1.5rem; }
+
+.padding-xl {
+  padding: 2rem; }
+
+.padding-xxl {
+  padding: 2.5rem; }
+
+.padding-xxxl {
+  padding: 3rem; }
+
+.not-round {
+  border-radius: 0rem; }
+
+.round-xs {
+  border-radius: 0.125rem; }
+
+.round-s {
+  border-radius: 0.25rem; }
+
+.round {
+  border-radius: 0.5rem; }
+
+.round-l {
+  border-radius: 1rem; }
+
+.round-xl {
+  border-radius: 2rem; }
+
+.round-xxl {
+  border-radius: 3rem; }
+
+.round-xxxl {
+  border-radius: 4rem; }
+
+.shadow {
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.35); }
+
+.third {
+  width: 33.33%;
+  flex: none; }
+  @media only screen and (max-width: 50rem) {
+    .third {
+      width: 100%; } }
+
+.two-thirds {
+  width: 66.66%;
+  flex: none; }
+  @media only screen and (max-width: 50rem) {
+    .two-thirds {
+      width: 100%; } }
+
+.full {
+  width: 100%;
+  flex: none; }
+
+.quater {
+  width: 25%;
+  flex: none; }
+  @media only screen and (max-width: 50rem) {
+    .quater {
+      width: 100%; } }
+
+.half {
+  width: 50%;
+  flex: none; }
+  @media only screen and (max-width: 50rem) {
+    .half {
+      width: 100%; } }
+
+.three-quaters {
+  width: 75%;
+  flex: none; }
+  @media only screen and (max-width: 50rem) {
+    .three-quaters {
+      width: 100%; } }
+
+.h1 {
+  height: 10vh; }
+  @media only screen and (max-width: 50rem) {
+    .h1 {
+      flex: none; } }
+
+.h2 {
+  height: 20vh; }
+  @media only screen and (max-width: 50rem) {
+    .h2 {
+      flex: none; } }
+
+.h3 {
+  height: 30vh; }
+  @media only screen and (max-width: 50rem) {
+    .h3 {
+      flex: none; } }
+
+.h4 {
+  height: 40vh; }
+  @media only screen and (max-width: 50rem) {
+    .h4 {
+      flex: none; } }
+
+.h5 {
+  height: 50vh; }
+  @media only screen and (max-width: 50rem) {
+    .h5 {
+      flex: none; } }
+
+.h6 {
+  height: 60vh; }
+  @media only screen and (max-width: 50rem) {
+    .h6 {
+      flex: none; } }
+
+.h7 {
+  height: 70vh; }
+  @media only screen and (max-width: 50rem) {
+    .h7 {
+      flex: none; } }
+
+.h8 {
+  height: 80vh; }
+  @media only screen and (max-width: 50rem) {
+    .h8 {
+      flex: none; } }
+
+.h9 {
+  height: 90vh; }
+  @media only screen and (max-width: 50rem) {
+    .h9 {
+      flex: none; } }
+
+.h10 {
+  height: 100vh; }
+  @media only screen and (max-width: 50rem) {
+    .h10 {
+      flex: none; } }
+
+.txt-left {
+  text-align: left; }
+
+.txt-center {
+  text-align: center; }
+
+.txt-right {
+  text-align: right; }
+
+.txt-no-decoration {
+  text-decoration: none; }
+
+.txt-underline {
+  text-decoration: underline; }
+
+.txt-overline {
+  text-decoration: overline; }
+
+.txt-upper {
+  text-transform: uppercase; }
+
+.txt-lower {
+  text-transform: lowercase; }
 
 /*# sourceMappingURL=pg.css.map */

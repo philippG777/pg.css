@@ -1,0 +1,10 @@
+$small-screen: "only screen and (max-width: 50rem)"
+$large-screen: "only screen and (min-width: 50rem)"
+
+.only-small-screen
+  @media #{$large-screen}
+    display: none
+
+.only-large-screen
+  @media #{$small-screen}
+    display: none
