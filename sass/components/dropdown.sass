@@ -13,16 +13,18 @@ $item-padding: 0.5rem
 
   .content
     position: absolute
-    display: none
-    margin: 0
-    margin-top: $space
-    min-width: $min-width
-    margin-left: -$space
-
+    display: block
     visibility: hidden
 
-
+    min-width: $min-width
+    margin-top: $space
+    
     background-color: $sec-color
+    opacity: 0
+    transition: $speed
+
+    cursor: initial
+    margin-left: -$space
     
     &.full
       width: 100%
@@ -32,19 +34,19 @@ $item-padding: 0.5rem
 
     .item
       display: block
-      text-align: center
-      cursor: pointer
       padding: $item-padding
-      width: 100%
+      
+      cursor: pointer
+      text-align: center
       transition: $speed
-      color: $text-color
+
 
   &:hover
     background-color: $hover-color
     .content
-      display: block
       z-index: 1
       visibility: visible
+      opacity: 1
       box-shadow: $shadow
 
       .item
