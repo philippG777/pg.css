@@ -1,4 +1,25 @@
+@import "../vars"
+
+$radius: 0.5rem
+$padding: 0.4rem
+
 .button
-  padding: 0.5rem
-  border: 2px solid #202020
-  border-radius: 0.75rem
+  padding: $padding
+  border: 2px solid $prim-color
+  border-radius: $radius
+
+  background-color: $sec-color
+  color: $prim-color
+  transition: $speed
+
+  &:hover
+    background-color: $prim-color
+    color: $sec-color
+
+  &.dark
+    background-color: $prim-color
+    color: $sec-color
+
+    &:hover
+      background-color: $sec-color
+      color: $prim-color

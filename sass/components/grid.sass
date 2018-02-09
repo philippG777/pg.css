@@ -6,8 +6,14 @@ $small-screen: "only screen and (max-width: 50rem)"
   align-items: flex-start
   justify-content: center
   @media #{$small-screen}
-    flex-direction: column
-    align-items: stretch
+    &:not(.not-responsive)
+      flex-direction: column
+      align-items: stretch
 
-.col
-  flex: 1
+  &.not-responsive
+    @media #{$small-screen}
+      flex: none
+
+  .col
+    flex: 1
+    

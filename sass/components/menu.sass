@@ -1,3 +1,5 @@
+@import "../vars"
+
 $small-screen: "only screen and (max-width: 50rem)"
 $item-padding: 0.5rem
 
@@ -7,6 +9,9 @@ $item-padding: 0.5rem
   text-align: center
   .item
     padding: $item-padding
+    transition: $speed
+    &:hover
+      background-color: $hover-color
 
   &.horizontal
     max-width: 100%

@@ -1,32 +1,45 @@
+@import "../vars"
+
 $small-screen: "only screen and (max-width: 50rem)"
 $min-width: 5rem
 $space: 0.5rem
 $bg-color: white
-$speed: 0.2s
 $item-padding: 0.5rem
 
 .dropdown
   cursor: pointer
+  padding: $space
+  transition: $speed
+
   .content
     position: absolute
     display: block
     cursor: initial
-    padding-top: $space
     margin: 0
+    margin-top: $space
     min-width: $min-width
-    background-color: $bg-color
 
     opacity: 0
     visibility: hidden
+    background-color: $sec-color
     
-    transition: $speed
     .item
       display: block
       cursor: pointer
       padding: $item-padding
       width: 100%
+      transition: $speed
+      color: $text-color
 
   &:hover
+    background-color: $prim-color
+    color: $sec-color
     .content
+      z-index: 1
       visibility: visible
       opacity: 1
+      box-shadow: $shadow
+
+      .item
+        &:hover
+          background-color: $hover-color
