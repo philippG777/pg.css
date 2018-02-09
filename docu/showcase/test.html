@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../pg.css">
+    <script type="text/javascript" src="../../pg.js"></script>
     <title>Test</title>
 </head>
 <body>
@@ -13,6 +14,14 @@
 		<a href="#" class="item">item1</a>
 		<a href="#" class="item">item2</a>
 		<a href="#" class="item">item3</a>
+        <span class="item dropdown">
+            Dropdown
+                <div class="content">
+                <span class="item">Item1</span>
+                <span class="item">Item2</span>
+                <span class="item">Item3</span>
+            </div>
+        </span>
 		<a href="#" class="item right">item4</a>
 	</div>
 	<h2>Vertical menu</h2>
@@ -20,6 +29,14 @@
 		<a href="#" class="item">item1</a>
 		<a href="#" class="item">item2</a>
 		<a href="#" class="item">item3</a>
+        <span class="item dropdown full">
+            Dropdown
+            <div class="content full">
+                <span class="item">Item1</span>
+                <span class="item">Item2</span>
+                <span class="item">Item3</span>
+            </div>
+        </span>
 		<a href="#" class="item right">item4</a>
 	</div>
 
@@ -33,6 +50,9 @@
 	<div class="card">
 		<h3>I'm a card.</h3>
 	</div>
+    <div class="card third">
+        <h3>I'm a card with third-class.</h3>
+    </div>
 	<div class="jumbotron border">
 		<h3>I'm a jumbotron.</h3>
 	</div>
@@ -51,7 +71,7 @@
 
 	<h2>Dropdown-menu</h2>
 	<span class="dropdown">
-		<span class="text">Dropdown</span>
+		Dropdown
 		<div class="content">
 			<span class="item">Item1</span>
 			<span class="item">Item2</span>
@@ -64,7 +84,8 @@
 	</span>. (hover on "sententce")</p>
 
 	<h2>Popup</h2>
-	<div class="popup">
+    <button class="button" onclick="pg.showPopup('popup', true)">Show popup</button>
+	<div id="popup" class="popup">
 		<div class="content">
 			<h3>I'm a popup.</h3>
 		</div>
@@ -211,5 +232,36 @@
   <h2>Buttons</h2>
   <button class="button margin">button</button>
   <button class="button dark">button dark</button>
+
+  <h2>Box-grid</h2>
+  <div class="box-grid">
+    <div class="box card">
+        <p>box</p>
+    </div>
+    <div class="box card quater">
+        <p>box quater</p>
+    </div>
+    <div class="box card quater">
+        <p>box quater</p>
+    </div>
+    <div class="box card">
+        <p>box</p>
+    </div>
+    <div class="box card quater">
+        <p>box quater</p>
+    </div>
+    <div class="box card half">
+        <p>box half</p>
+    </div>
+    <div class="box card third">
+        <p>box third</p>
+    </div>
+    <div class="box card not-auto" style="width: 300px;">
+        <p>not-auto</p>
+    </div>
+    <div class="box card not-auto" style="width: 800px;">
+        <p>not-auto</p>
+    </div>
+  </div>
 </body>
 </html>

@@ -3,37 +3,42 @@ $small-screen: "only screen and (max-width: 50rem)"
 // width
 .third
   width: 33.33%
-  flex: none
+  flex: none !important
   @media #{$small-screen}
-    width: 100%
+    width: initial
 
 .two-thirds
   width: 66.66%
-  flex: none
+  flex: none !important
   @media #{$small-screen}
-    width: 100%
+    width: initial
 
 .full
   width: 100%
-  flex: none
+  flex: none !important
+  @media #{$small-screen}
+    width: initial
 
 .quater
   width: 25%
-  flex: none
+  flex: none !important
   @media #{$small-screen}
-    width: 100%
+    width: initial
 
 .half
   width: 50%
-  flex: none
+  flex: none !important
   @media #{$small-screen}
-    width: 100%
+    width: initial
 
 .three-quaters
   width: 75%
-  flex: none
+  flex: none !important
   @media #{$small-screen}
-    width: 100%
+    width: initial
+
+.not-auto
+  flex: none !important
 
 // height
 .h1

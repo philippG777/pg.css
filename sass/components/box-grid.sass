@@ -1,21 +1,24 @@
 $small-screen: "only screen and (max-width: 50rem)"
+$margin: 1rem
 
-.cols
+.box-grid
   display: flex
   flex-direction: row
+  flex-wrap: wrap
   align-items: flex-start
   justify-content: center
   @media #{$small-screen}
     &:not(.not-responsive)
-      flex-direction: column
-      align-items: stretch
+        flex-direction: column
+        align-items: stretch
 
-  &.not-responsive
-    @media #{$small-screen}
-      flex: none
 
-  .col
+  .box
     flex: 1
+    margin: $margin
+    @media #{$small-screen}
+      flex: none !important
+
     &.not-auto
       flex: none !important
       @media #{$small-screen}

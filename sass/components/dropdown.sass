@@ -14,15 +14,21 @@ $item-padding: 0.5rem
   .content
     position: absolute
     display: block
-    cursor: initial
     margin: 0
     margin-top: $space
     min-width: $min-width
+    margin-left: -$space
 
     opacity: 0
     visibility: hidden
     background-color: $sec-color
     
+    &.full
+      width: 100%
+
+    @media #{$small-screen}
+      width: 100%
+
     .item
       display: block
       cursor: pointer
@@ -32,8 +38,7 @@ $item-padding: 0.5rem
       color: $text-color
 
   &:hover
-    background-color: $prim-color
-    color: $sec-color
+    background-color: $hover-color
     .content
       z-index: 1
       visibility: visible
