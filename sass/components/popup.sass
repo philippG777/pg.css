@@ -7,6 +7,7 @@ $max-width: 90vw
 $padding: 1rem
 $bg-color: white
 $radius: 0.5rem
+$close-btn-padding: 0.5rem
 
 .popup
   position: fixed
@@ -26,6 +27,7 @@ $radius: 0.5rem
   justify-content: center
 
   .content:first-child
+    position: relative
     min-width: $min-width
     max-width: $max-width
     padding: $padding
@@ -34,3 +36,10 @@ $radius: 0.5rem
 
     @media #{$small-screen}
       min-width: $s-min-width
+
+    .close-button
+      position: absolute
+      top: 0
+      right: 0
+      padding: $close-btn-padding
+      cursor: pointer

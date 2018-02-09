@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../pg.css">
     <script type="text/javascript" src="../../pg.js"></script>
     <title>Test</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
 	<h1>Test-page</h1>
@@ -87,7 +88,9 @@
     <button class="button" onclick="pg.showPopup('popup', true)">Show popup</button>
 	<div id="popup" class="popup">
 		<div class="content">
+      <span class="close-button far fa-times-circle font-l" onclick="pg.hidePopup(this)"></span>
 			<h3>I'm a popup.</h3>
+      <p>The close-button-icon is from fontawesome.com.</p>
 		</div>
 	</div>
 
