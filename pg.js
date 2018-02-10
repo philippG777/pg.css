@@ -13,15 +13,16 @@ var pg = {
             ttl = 5;    // max. 5 times recursion
 
         var classes = element.className.split(" ");
+        var isPopup = classes.indexOf("popup") != -1;
         var index = classes.indexOf("active");
-        if(index != -1)
+        if(isPopup && index != -1)
         {
             classes.splice(index, 1);
             element.className = classes.join(" ");
         }
         else
         {
-            if (element.tagName == "BODY")  // popup has to bee in the body
+            if (ttl == 0 || element.tagName == "BODY")  // popup has to bee in the body
             {
                 return;
             }
