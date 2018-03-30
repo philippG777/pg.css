@@ -12,17 +12,35 @@ var pg = {
         if (ttl == undefined)
             ttl = 5;    // max. 5 times recursion
 
-        var classes = element.className.split(" ");
+        var classes;
+
+        if (element.className.baseVal != undefined)
+        {
+            classes = element.className.baseVal.split(" ");
+        }
+        else
+        {
+            classes = element.className.split(" ");
+        }
+
         var isPopup = classes.indexOf("popup") != -1;
         var index = classes.indexOf("active");
         if(isPopup && index != -1)
         {
             classes.splice(index, 1);
-            element.className = classes.join(" ");
+            
+            if (element.className.baseVal != undefined)
+            {
+                element.className.baseVal = classes.join(" ");
+            }
+            else
+            {
+                element.className = classes.join(" ");
+            }
         }
         else
         {
-            if (ttl == 0 || element.tagName == "BODY")  // popup has to bee in the body
+            if (ttl == 0 || element.tagName == "BODY")  // popup has to be in the body
             {
                 return;
             }
