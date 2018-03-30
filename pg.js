@@ -2,10 +2,41 @@
 "use strict";
 
 var pg = {
-    showPopup: function (id)
+    showPopup: function (arg)
     {
-        document.getElementById(id).className += " active";
+        var element;
+        if (typeof arg == "string")
+            element = document.getElementById(arg);
+        else
+            element = arg;
+        element.className += " active";
+        return element
     },
+
+
+    addCloseAction: function (element, outsideClose)
+    {
+        var closeBtns = Array.from(element.getElementsByClassName("close-button"));
+        closeBtns.forEach(function (el)
+        {
+            el.addEventListener("click", function (ev)
+            {
+                ev.stopPropagation();
+                pg.hidePopup(ev.target);
+            });
+        });
+
+        if (outsideClose)
+            element.addEventListener("click", function (ev)
+            {
+                ev.stopPropagation();
+                if (ev.target.className.indexOf("popup") != -1 && ev.originalTarget.className.indexOf("active") != -1)
+                    pg.hidePopup(ev.target);
+            });
+
+        return element;
+    },
+
 
     hidePopup: function (element, ttl)
     {

@@ -85,10 +85,10 @@
 	</span>. (hover on "sententce")</p>
 
 	<h2>Popup</h2>
-    <button class="button" onclick="pg.showPopup('popup', true)">Show popup</button>
+    <button class="button" onclick="pg.addCloseAction(pg.showPopup('popup'), true)">Show popup</button>
 	<div id="popup" class="popup">
 		<div class="content">
-      <span class="close-button far fa-times-circle font-l" onclick="pg.hidePopup(this)"></span>
+      <span class="close-button far fa-times-circle font-l"></span>
 			<h3>I'm a popup.</h3>
       <p>The close-button-icon is from fontawesome.com.</p>
 		</div>
@@ -235,6 +235,11 @@
   <h2>Buttons</h2>
   <button class="button margin">button</button>
   <button class="button dark">button dark</button>
+
+  <h3>Round Buttons</h3>
+  <button class="round-button">P</button>
+  <button class="round-button dark">P</button>
+
 
   <h2>Box-grid</h2>
   <div class="box-grid">

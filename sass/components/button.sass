@@ -12,7 +12,36 @@ $padding: 0.4rem
   color: $prim-color
   cursor: pointer
   transition: $speed
+  cursor: pointer
 
+  &:hover
+    background-color: $prim-color
+    color: $sec-color
+
+  &.dark
+    background-color: $prim-color
+    color: $sec-color
+
+    &:hover
+      background-color: $sec-color
+      color: $prim-color
+
+
+$round-button-size: 2.25rem
+$round-button-padding: 0.5rem
+
+.round-button
+  width: $round-button-size
+  height: $round-button-size
+  padding: $round-button-padding
+  border: 2px solid $prim-color
+  border-radius: 100%
+
+  background-color: $sec-color
+  color: $prim-color
+  transition: $speed
+  cursor: pointer
+  
   &:hover
     background-color: $prim-color
     color: $sec-color
